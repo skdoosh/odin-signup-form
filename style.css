@@ -30,8 +30,8 @@ button {
 
 @font-face {
     font-family: 'norsebold';
-    src: url('./assets/font/norse-bold-webfont.woff2') format('woff2'),
-         url('./assets/font/norse-bold-webfont.woff') format('woff');
+    src: url('/odin-signup-form/assets/font/norse-bold-webfont.woff2') format('woff2'),
+         url('/odin-signup-form/assets/font/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -61,7 +61,7 @@ button {
 .image.container {
     width: 40vw;
     height: 100vh;
-    background-image: url(./assets/ian-chen-wrrgZwI7qOY-unsplash.jpg);
+    background-image: url(/odin-signup-form/assets/ian-chen-wrrgZwI7qOY-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
