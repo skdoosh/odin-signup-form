@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Sign-Up Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="box">
-        <div class="image container">
-            <div class="text-backdrop">
-                <img class='odin' src="./assets/odin-lined.png" alt="">
-                <div class="text">ODIN</div>
-            </div>
+      <div class="image container">
+        <div class="text-backdrop">
+          <img class="odin" src="./assets/odin-lined.png" alt="" />
+          <div class="text">ODIN</div>
         </div>
-        <div class="form container">
-            <div class="hero-text">
-                <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h1>
-                <h1>You <em>know</em> you want to.</h1>
-            </div>
-            <div class="form"></div>
-            <div class="submit-card"></div>
+      </div>
+      <div class="form container">
+        <div class="hero-text">
+          <h1>
+            <p>
+              This is not a real online service! You know you need something like
+              this in your life to help you realize your deepest dreams.
+            </p> Sign up <em>now</em> to get started.
+          </h1>
+          <h1>You <em>know</em> you want to.</h1>
         </div>
+        <div class="form">
+          <h1>Let's do this!</h1>
+          <form id="myform" action="/" method="post">
+            <div class="form-box">
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="firstname">FIRST NAME</label>
+                        <input id='firstname' name="firstname" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input id="email" name="email" type="email" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">PASSWORD</label>
+                        <input id="password" name="password" type="password" minlength="4" />
+                    </div>
+                </div>
+                <div class="form-column">
+                    <div class="form-group">
+                        <label for="lastname">LAST NAME</label>
+                        <input id="lastname" name="lastname" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phonenumber">PHONE NUMBER</label>
+                        <input id="phonenumber" name="phonenumber" type="number" />
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input id="confirm-password" name="confirm-password" type="password" minlength="4"/>
+                    </div>
+                </div>
+            </div>
+          </form>
+        </div>
+        <div class="submit-card">
+          <div class="button"><button type="submit" form="myform" class="create-account">Create Account</button></div>
+          <span class="login-prompt">Already have an account? <a href="/">Log in</a></span>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
