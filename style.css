@@ -1,7 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-         url('norse-bold-webfont.woff') format('woff');
+    src: url('./assets/font/norse-bold-webfont.woff2') format('woff2'),
+         url('./assets/font/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -11,4 +17,43 @@
     --input-border: #E5E7EB;
     --invalid-password: red;
     --accent-clr: #82A911;
+}
+
+.text {
+    font-family: "norsebold";
+    font-size: 10vh;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.box {
+    display: flex;
+}
+
+
+.image.container {
+    width: 40vw;
+    height: 100vh;
+    background-image: url(./assets/ian-chen-wrrgZwI7qOY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.form.container {
+    width: 60vw;
+    height: 100vh;
+}
+.text-backdrop{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    margin-top: 20vh;
+    justify-content: center;
+    padding: 2vh;
+}
+.odin {
+    margin-left: auto;
 }
